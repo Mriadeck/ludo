@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Ludo</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+        }
+        .board{
+            margin: 10px auto;
+            border: 2px solid #000;
+            width: fit-content;
+        }
+        .red{
+            background-color: #FF0000;
+        }
+        .green{
+            background-color: #009900;
+        }
+        .yellow{
+            background-color: #FFCC00;
+        }
+        .blue{
+            background-color: #1100ff;
+        }
+        .red-box{
+            background-color: #FF0000;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #000;
+        }
+        .green-box{
+            background-color: #009900;
+            width: 250px;
+            height: 250px;
+            border: 1px solid #000;
+        }
+        .white-box{
+            background-color: #fff;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            margin: 20% auto;
+        }
+        .white-box .cicle{
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            float: left;
+            border: 1px solid #000;
+            margin: 16px;
+        }
+        .cell{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+        }
+        .destination{
+            border-top: 63px solid #009900;
+            border-left: 63px solid #ff0000;
+            border-right: 63px solid #FFCC00;
+            border-bottom: 63px solid #1100ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>ludo </h1>
+    <div class="board">
+        <div class="row">
+            <div class="red-box">
+                <div class="white-box">
+                    <div class="red cicle"></div>
+                    <div class="red cicle"></div>
+                    <div class="red cicle"></div>
+                    <div class="red cicle"></div>
+                </div>
+            </div>
+            <div class="cell-container">
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="green-box">
+                <div class="white-box">
+                    <div class="green cicle"></div>
+                    <div class="green cicle"></div>
+                    <div class="green cicle"></div>
+                    <div class="green cicle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell-container">
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            <div>
+                <div class="destination"></div>
+                <div class="cell-container">
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
